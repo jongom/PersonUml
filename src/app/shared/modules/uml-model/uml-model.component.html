@@ -1,0 +1,9 @@
+<!--component html goes here -->
+<div [ngSwitch]="type">
+    <div *ngSwitchCase="umlType.CLASS">
+        <class-model [class]="model"></class-model>
+    </div>
+    <div *ngSwitchDefault>
+        <mat-card><mat-icon>error</mat-icon></mat-card>
+    </div>
+</div>
